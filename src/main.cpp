@@ -10,10 +10,6 @@ XboxSeriesXControllerESP32_asukiaaa::Core xboxController;
 long servo_us;
 
 void setup() {
-  ESP32PWM::allocateTimer(0);
-	ESP32PWM::allocateTimer(1);
-	ESP32PWM::allocateTimer(2);
-	ESP32PWM::allocateTimer(3);
   Serial.begin(115200);
   servo1.attach(A4, SERVO_MIN, SERVO_MAX);
   servo1.setPeriodHertz(50);
